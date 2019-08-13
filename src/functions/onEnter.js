@@ -14,7 +14,7 @@ const onEnter = ({
 }) => {
   if (inTransition) {
     setTimeout(() => {
-      window.scrollTo(0, 0);
+      // window.scrollTo(0, 0);
     }, appearAfter);
   } else {
     // If session storage fails due to cookies being disabled, 
@@ -27,7 +27,7 @@ const onEnter = ({
     catch(e) {
       console.warn(`[gatsby-plugin-transition-link] Unable to save state in sessionStorage; sessionStorage is not available.`)
     } finally {
-      window.scrollTo(...position);
+      // window.scrollTo(...position);
     }
   }
 
